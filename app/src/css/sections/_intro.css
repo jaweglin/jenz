@@ -46,8 +46,8 @@
 			margin-top: 122px;
 		}
 	}
+}
 
-	.binary{
-		font-size: 0.5rem;
-	}
+.binary--content {
+		font-size: 0.7rem;
 }
