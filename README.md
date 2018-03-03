@@ -1,2 +1,2 @@
-# jenz
-Personal site.
+# razitazi
+Personal one page site
