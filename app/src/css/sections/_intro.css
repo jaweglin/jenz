@@ -26,28 +26,28 @@
 }
 
 .box--intro-main__headline {
-	margin-top: 25%;
+margin-top: 122px;
 
-	@media (--small) {
-		margin-top: 97	%;
-		background: var(--color-brand);
-		padding: 20px 15px;
-		color: var(--color-white);
 
+		@media (--large) {
+		margin-top: 113px;
+		}
 		@media (--medium) {
-			margin-top: 185px;
+		margin-top: 113px;
 		}
-
 		@media (--small) {
-			margin-top: 159px;
+		margin-top: 159px;
 		}
-
 		@media (--xsmall) {
 			margin-top: 122px;
 		}
-	}
 }
 
 .binary--content {
 		font-size: 0.7rem;
+
+
+		@media (--small) {
+		font-size: 0.5rem;
+		}
 }

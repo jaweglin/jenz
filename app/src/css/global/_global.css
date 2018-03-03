@@ -32,6 +32,12 @@ img {
     *zoom: 1;
 }
 
+label,
+input,
+textarea {
+	box-sizing: border-box;
+}
+
 ul {
 	padding: 0;
 	list-style-type: none;
