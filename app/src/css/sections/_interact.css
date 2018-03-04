@@ -183,8 +183,6 @@ button:focus {
 #bye-toggle {
     position: relative;
 
-    height: 51px;
-
     cursor: pointer;
 
     border: none;
