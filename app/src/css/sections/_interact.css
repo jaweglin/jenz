@@ -82,11 +82,16 @@
 	}
 }
 
-input {
-	:fokus {
-		outline: red !important;
-	}
+input:focus {
+	outline: none;
+	border-color: yellow;
 }
+
+textarea:focus {
+	outline: none;
+	border-color: yellow;
+}
+
 
 .box--interact-bye {
 	width: var(--grid-4);
@@ -95,13 +100,19 @@ input {
 .form--bye {
 	float: left;
 	width: 100%;
+	display: none;
+}
+
+body.open .form--bye {
+	display: block;
 }
 
 .form__input {
 	width: 100%;
 	border-style: none;
-	background-color: var(--color-grid);
+	background-color: var(--color-grey);
 	margin-bottom: 15px;
+	padding: 10px;
 }
 
 .form__label {
@@ -120,15 +131,88 @@ input {
 	padding: 10px 0;
 	outline: none;
 	border-style: none;
+	transition: all ease 0.2s;
 
 	&:hover,
 	&:focus,
 	&:active {
-		outline: none;
 		border-style: none;
 		cursor: pointer;
 		box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.12);
-	}
+		outline-offset: 0px;
+		font-size: 1.1rem;
 
+	}
+}
+
+/* PUSH TOGGLE */
+#toggle {
+    position: fixed;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+
+    -webkit-transition: all .3s ease-in;
+       -moz-transition: all .3s ease-in;
+         -o-transition: all .3s ease-in;
+            transition: all .3s ease-in;
 
 }
+
+/* MAIN PAGE */
+.page-wrap {
+
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+
+    -webkit-transition: all .3s ease-in;
+       -moz-transition: all .3s ease-in;
+         -o-transition: all .3s ease-in;
+            transition: all .3s ease-in;
+}
+body.open .page-wrap {
+    margin-left: 300px;
+}
+
+/* BYE TOGGLE ICON */
+
+button:focus {
+    outline: none;
+}
+#bye-toggle {
+    position: relative;
+
+    height: 51px;
+
+    cursor: pointer;
+
+    border: none;
+}
+
+#bye-toggle:before,
+#bye-toggle:after {
+    position: absolute;
+
+    content: "";
+    content: "";
+    -webkit-transition: all .5s ease;
+       -moz-transition: all .5s ease;
+         -o-transition: all .5s ease;
+            transition: all .5s ease;
+}
+
+#bye-toggle:before {
+    top: 12px;
+    left: 25px;
+
+    width: 1px;
+    height: 27px;
+}
+#bye-toggle:after {
+    top: 25px;
+    left: 12px;
+
+    width: 27px;
+    height: 1px;
+	}
