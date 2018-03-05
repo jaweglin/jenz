@@ -16,11 +16,11 @@ function removeClass(ele, cls) {
 
 //Add event from js the keep the marup clean
 function init() {
-    document.getElementById("bye-toggle").addEventListener("click", toggleMenu);
+    document.getElementById("bye-toggle").addEventListener("click", toggleBye);
 }
 
 //The actual fuction
-function toggleMenu() {
+function toggleBye() {
     var ele = document.getElementsByTagName('body')[0];
     if (!hasClass(ele, "open")) {
         addClass(ele, "open");
