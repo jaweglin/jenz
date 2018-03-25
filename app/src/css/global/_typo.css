@@ -78,13 +78,13 @@ strong {
 
 ::selection {
 	background: var(--color-brand);
-	color: var(--color-white);
+	color: var(--color-black);
 }
 
 .intro-text{
 	color:var(--color-black);
 	font-size: 6.5rem;
-	
+
 
 	@media (--medium) {
 		margin-top: 76px;
