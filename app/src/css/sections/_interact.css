@@ -57,6 +57,7 @@
 .box--interact-links__item {
 	display: block;
 
+
 	& a {
 		text-decoration: none;
 	}
@@ -186,6 +187,7 @@ button:focus {
     cursor: pointer;
 
     border: none;
+		text-decoration: underline;
 }
 
 #bye-toggle:before,

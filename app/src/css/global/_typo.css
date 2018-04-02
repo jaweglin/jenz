@@ -33,6 +33,10 @@ h2 {
 	@media (--small) {
 		font-size: 1.2rem;
 	}
+
+	@media (--large) {
+		font-size: 3.2rem;
+	}
 }
 
 h3 {
@@ -44,6 +48,10 @@ p {
 	font-size: 1rem;
 	line-height: 1.7;
 	letter-spacing: 0.03rem;
+
+	@media (--large) {
+			font-size: 1.2rem;
+	}
 
 	@media (--medium) {
 			font-size: .875rem;
