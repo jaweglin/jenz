@@ -97,6 +97,11 @@ textarea:focus {
 
 .box--interact-bye {
 	width: var(--grid-4);
+
+	@media (--small) {
+		width: 100%;
+		margin-left: 0;
+	}
 }
 
 .form--bye {

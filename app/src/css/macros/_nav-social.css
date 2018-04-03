@@ -5,7 +5,9 @@
 	top: 50%;
 
 	@media (--small) {
-		display: none;
+		top: 0;
+		bottom: 20px;
+		display: block;
 	}
 }
 
